@@ -1,3 +1,6 @@
+html {
+  font-size: 100%; }
+
 * {
   box-sizing: border-box; }
 
@@ -5,63 +8,68 @@
   overflow: hidden;
   margin: 0 auto;
   background-color: #fff;
-  font-size: 16px;
   font-family: 'Raleway', sans-serif; }
   .wrapper a:hover {
     color: #9fd86c; }
 
 .hero-section {
-  margin-bottom: 80px; }
+  margin-bottom: 5rem; }
 
 .section-container {
-  width: 1000px;
   margin: 0 auto;
-  max-width: 1000px; }
+  max-width: 62.5em; }
 
 .site-header {
-  padding: 30px 0; }
+  padding: 2em 0; }
   .site-header .logo {
-    height: 120px;
-    width: 233px; }
+    height: 7.5rem;
+    width: 14.5rem; }
 
 .site-navigation a {
   color: #999;
   font-size: 2.5em;
-  padding-left: 42px; }
+  padding-left: 1.5em; }
 
 .site-believing {
   background-color: #fafafa;
-  padding: 90px 0; }
+  padding: 5.6em 0; }
   .site-believing .believing-title {
     font-size: 3.8em;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     text-align: center; }
   .site-believing p {
-    font-size: 20px; }
+    font-size: 2.2em; }
   .site-believing .believing-items {
     counter-reset: x; }
   .site-believing .believing-item {
-    position: relative; }
+    position: relative;
+    margin-bottom: 1em; }
+    .site-believing .believing-item h3 {
+      font-size: 2em;
+      margin-bottom: 1em; }
+    .site-believing .believing-item p {
+      font-size: 1.5em;
+      font-family: "Lato", sans-serif; }
   .site-believing .believing-item::before {
     overflow: hidden;
     position: absolute;
     z-index: 1;
     content: counter(x) " ";
     counter-increment: x;
-    font: 55px 'Lato', sans-serif;
+    font: 3.4em 'Lato', sans-serif;
     color: #5ccda3;
     text-transform: uppercase; }
 
 .site-about {
   background-color: #fff;
-  padding: 90px 0; }
+  padding: 5.6em 0; }
   .site-about .about-title {
     font-size: 3.8em;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     text-align: center;
-    margin-bottom: 50px; }
+    margin-bottom: 3rem; }
   .site-about h4 {
     font-size: 1.8em;
     font-weight: normal;
@@ -70,71 +78,72 @@
     font-size: 1.4em;
     text-align: center; }
   .site-about .members {
-    margin-top: 40px; }
+    margin-top: 2.5em; }
     .site-about .members li {
       display: inline-block;
-      width: 300px;
-      margin-bottom: 40px; }
+      width: 18rem;
+      margin-bottom: 2.5em; }
       .site-about .members li img {
-        margin-bottom: 80px;
-        width: 280px;
-        height: 280px;
+        margin-bottom: 4em;
+        width: 17,5rem;
+        height: 17,5rem;
         overflow: hidden;
-        box-shadow: 0 0 43px 67px #fff inset;
+        box-shadow: 0 0 2,7rem 4rem #fff inset;
         border-radius: 50%; }
+      .site-about .members li h4 {
+        margin-bottom: 1em; }
   .site-about .members-p {
-    width: 600px;
+    width: 37,5rem;
     text-align: center;
     margin: 0 auto; }
 
 .site-map {
   background-color: #fafafa;
-  padding: 45px 0; }
+  padding: 2.8em 0; }
   .site-map h2 {
-    font-size: 50px;
+    font-size: 3.125em;
     color: #36988e;
     text-align: center;
-    margin-bottom: 30px; }
+    margin-bottom: 1.8rem; }
   .site-map .map-p {
-    width: 600px;
+    width: 37,5em;
     text-align: center;
-    margin-left: 180px;
-    font-size: 20px;
-    margin-bottom: 45px; }
+    margin: 0 auto;
+    font-size: 1.25em;
+    margin-bottom: 2.8em; }
   .site-map .img-map {
     height: auto;
-    width: 1000px;
-    padding-bottom: 50px;
-    padding-top: 25px; }
+    max-width: 62.5em;
+    padding-bottom: 3.125em;
+    padding-top: 1.5em; }
 
 .site-contact {
   background-color: #fff; }
   .site-contact .section-container {
     overflow: hidden;
-    padding: 130px 0; }
+    padding: 8.125em 0; }
   .site-contact .contact-info {
-    width: 400px;
-    font-size: 20px;
+    width: 25rem;
     text-align: left;
     font-family: "Lato", sans-serif; }
     .site-contact .contact-info .contact-title {
-      font-size: 50px;
+      font-size: 3.125em;
       font-weight: 300;
       color: #36988e;
       font-family: 'Raleway', sans-serif;
-      margin-bottom: 45px; }
+      margin-bottom: 2.8rem; }
   .site-contact .social-icons {
     display: inline-block;
-    width: 500px; }
+    width: 31em; }
     .site-contact .social-icons .social-item {
       position: relative;
       display: inline-block;
-      height: 144px;
-      width: 144px;
-      border: 2px solid #eee;
+      height: 9em;
+      width: 9em;
+      border: 0.125rem solid #eee;
       border-radius: 50%;
-      margin-left: 10px;
-      margin-bottom: 8px; }
+      margin-left: 0.625em;
+      margin-bottom: 0.5em; }
       .site-contact .social-icons .social-item a {
         position: absolute;
         display: block;
@@ -146,10 +155,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
         color: #9fd86c;
-        font-size: 61px; }
+        font-size: 3.75em; }
     .site-contact .social-icons li:hover {
       background: #9fd86c;
-      border: 2px solid #9fd86c;
+      border: 0.125rem solid #9fd86c;
       border-radius: 50%; }
       .site-contact .social-icons li:hover i {
         color: #fff; }
