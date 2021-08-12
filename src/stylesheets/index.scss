@@ -1,22 +1,27 @@
 $primary-color : yellow;
 $font-stack: 'Lato', sans-serif;
+$mobile: 568px;
+$tablet: 768px;
+$desktop: 1024px;
 
 html {
-font-size: 100%;
+  font-size: 100%;
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    font-size: 80%;
+  }
+  @media screen and (max-width: $tablet - 1px) {
+    font-size: 50%;
+  }
 }
-
 * {
 box-sizing: border-box;
 }
-
 .wrapper {
   overflow: hidden;
   margin: 0 auto;
   background-color: #fff;
   font-family: 'Raleway', sans-serif;
-  a:hover {
-    color: #9fd86c;
-  }
+
 }
 .hero-section {
   margin-bottom: 5rem;
@@ -24,138 +29,234 @@ box-sizing: border-box;
 .section-container {
   margin: 0 auto;
   max-width: 62.5em;
+    padding: 0 1em;
 }
 .site-header {
   padding: 2em 0;
+  .header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .site-logo {
+    display: block;
+  }
   .logo {
     height: 7.5rem;
     width: 14.5rem;
   }
-}
 .site-navigation  {
+  li {
+    display: inline-block;
+    padding-left: 4em;
+  }
     a {
       color: #999;
       font-size: 2.5em;
-      padding-left: 1.5em;
+      transition: 0.3s linear;
     } 
+    a:hover {
+      color: #9fd86c;
+    }
 }
-
+}
+#ulNavigation {
+display: flex;
+align-items:center;
+justify-content: flex-end;
+@media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+  display: none;
+}
+@media screen and (max-width: $tablet - 1px) {
+  display: none;
+}
+}
+button {
+  position: absolute;
+  right: 0.625rem;
+  top: -4.125rem;
+  outline: none;
+  border: none;
+  background: none;
+  color: #999;
+  font-size: 2.5em;
+  transition: 0.3s linear;
+  button:hover {
+    color: #9fd86c;
+  }
+}
+.active {
+  display: flex!important;
+}
+.carousel-caption {
+  text-shadow: rgb(32, 32, 32) 3px 0 8px;
+  h5 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+}
 .site-believing {
-  background-color: #fafafa;
   padding: 5.6em 0;
-
+  background-color: #fafafa;
   .believing-title {
+    margin-bottom: 3rem;
     font-size: 3.8em;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     text-align: center;
   }
-
   p {
     font-size: 2.2em;
   }
-
   .believing-items {
     counter-reset: x;
+    padding-left: 5.62em;
   }
-
   .believing-item {
     position: relative;
     margin-bottom: 1em;
     h3 {
+      margin-bottom: 1.5em;
       font-size: 2em;
-      margin-bottom: 1em;
+      font-weight: bold;
     }
     p {
       font-size: 1.5em;
       font-family: $font-stack;
     }
   }
-
   .believing-item::before {
     overflow: hidden;
     position: absolute;
     z-index: 1;
-    // left: 12px;
-    //transform: translate(-50%, 0);
+    left: -2.9375rem;
+    top: -1rem;
     content: counter(x) " ";
     counter-increment: x;
-    font: 3.4em 'Lato', sans-serif;
+    font: 4em 'Lato', sans-serif;
     color: #5ccda3;
     text-transform: uppercase;
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px){
+      left: -3rem;
+      top: 0.75rem;
+    }
+    @media screen and (max-width: $tablet - 1px) {
+      left: -2.3125rem;
+      top: 0.5rem;
+    }
+  }
+  .believing-item::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    top: 2.375rem;
+    left: -1.6875rem;
+    height: 0.3125rem;
+    margin-right: 0.625rem;
+    background-color: #5ccda3;
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px){
+      left: -1.5rem;
+      top: 4.155rem;
+      height: 0.25rem;
+    }
+    @media screen and (max-width: $tablet - 1px) {
+      top: 3.7rem;
+      left: -1rem;
+      height: 0.4rem;
+    }
+    @media screen and (max-width: $mobile - 1px) {
+      display: none;
+    }
   }
 }
-
-
 .site-about {
-  background-color: #fff;
   padding: 5.6em 0;
+  background-color: #fff;
   .about-title {
+    margin-bottom: 3rem;
     font-size: 3.8em;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     text-align: center;
-    margin-bottom: 3rem;
   }
-  h4 {
-    font-size: 1.8em;
-    font-weight: normal;
-    text-align: center;
-  }
-  p {
-    font-size: 1.4em;
-    text-align: center;
-  }
-
-  .members {
-    margin-top: 2.5em;
-
-    li {
-      display: inline-block;
-      width: 18rem;
-      margin-bottom: 2.5em;
-
-      img {
-        margin-bottom: 4em;
-        width: 17,5rem;
-        height: 17,5rem;
-        overflow: hidden;
-        box-shadow: 0 0 2,7rem 4rem #fff inset;
-        border-radius: 50%;
-      }
-      h4 {
-        margin-bottom: 1em;
-      }
-    }
-  }
-
   .members-p {
-    width: 37,5rem;
+    max-width: 37.5rem;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 2em;
+  }
+  .team {
+    display: flex;
+    justify-content: space-between;
+  }
+  .employee {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .employee-info {
+    h1 {
+      margin-bottom: 1em;
+      font-size: 1.8em;
+      font-weight: normal;
+      text-align: center;
+    }
+    p {
+      margin-bottom: 1em;
+      font-size: 1.4em;
+      text-align: center;
+    } 
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17.5em;
+    height: 17.5em;
+    margin-bottom: 4em;
+    overflow: hidden;
+    box-shadow: 0 0 2.7rem 4rem #fff inset;
+    border-radius: 50%;
+    object-fit: cover;
   }
 }
-
-
+iframe {
+  display:block;
+  margin: 0 auto;
+}
 .site-map {
   background-color: #fafafa;
   padding: 2.8em 0;
-
+  .map {
+    width: 62.5rem;
+    height: 28.1rem;
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      width: 46.8rem;
+    }
+    @media screen and (max-width: $tablet - 1px) {
+      max-width: 31.25rem;
+    }
+    @media screen and (max-width: $mobile - 1px) {
+      max-width: 18.75rem;
+    }
+  }
   h2 {
     font-size: 3.125em;
     color: #36988e;
     text-align: center;
     margin-bottom: 1.8rem;
   }
-
   .map-p {
-    width: 37,5em;
+    max-width: 37.5em;
     text-align: center;
     margin: 0 auto;
     font-size: 1.25em;
     margin-bottom: 2.8em;
   }
-
   .img-map {
     height: auto;
     max-width: 62.5em;
@@ -163,43 +264,43 @@ box-sizing: border-box;
     padding-top: 1.5em;
   }
 }
-
 .site-contact {
   background-color: #fff;
-
+  .interconnection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .section-container {
     overflow: hidden;
     padding: 8.125em 0;
   }
-
   .contact-info {
-    width: 25rem;
-    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    max-width: 25rem;
     font-family: $font-stack;
-
     .contact-title {
+      margin-bottom: 2.8rem;
       font-size: 3.125em;
       font-weight: 300;
       color: #36988e;
       font-family: 'Raleway', sans-serif;
-      margin-bottom: 2.8rem;
     }
   }
-
   .social-icons {
-    display: inline-block;
-    width: 31em;
-
+    display: block;
+    max-width: 31em;
+    margin: 0 auto;
     .social-item {
       position: relative;
       display: inline-block;
       height: 9em;
       width: 9em;
-      border: 0.125rem solid #eee;
-      border-radius: 50%;
       margin-left: 0.625em;
       margin-bottom: 0.5em;
-
+      border: 0.125rem solid #eee;
+      border-radius: 50%;
       a {
         position: absolute;
         display: block;
@@ -207,7 +308,6 @@ box-sizing: border-box;
         top: 50%;
         left: 50%;
       }
-
       i {
         top: 50%;
         left: 50%;
@@ -216,18 +316,58 @@ box-sizing: border-box;
         font-size: 3.75em;
       }
     }
-
     li:hover {
       background: #9fd86c;
       border: 0.125rem solid #9fd86c;
       border-radius: 50%;
-
+      transition: 0.1s linear;
       i {
         color: #fff;
       }
     }
   }
 }
+footer {
+  background-color: #108a7e;
+  padding: 1.5em 0;
+  width: 100%;
+  padding: 4em 0;
+  overflow: hidden;
+  color: white;
+  .section-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+  }
+  .footer-contact {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-info {
+    font-size: 1.25em;
+    p {
+      max-width: 17rem;
+      margin-bottom: 1em;
+      @media screen and (max-width: $tablet - 1px) {
+        max-width: 100%;
+      }
+    }
+  }
+  .footer-navigation {
+    li {
+      font-size: 2.8em;
+      padding-left: 1em;
+    }
+    i {
+      color: #fff;
+    }
+    li i:hover {
+      color: #999;
+    }
+  }
+}
+
+
 
 
 

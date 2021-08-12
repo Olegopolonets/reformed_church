@@ -1,1 +1,3 @@
-import bootstrap from 'bootstrap';
+function toggleMenu() {
+  document.getElementById("ulNavigation").classList.toggle("active");
+}
