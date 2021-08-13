@@ -1,6 +1,7 @@
 html {
   font-size: 100%;
-  line-height: normal; }
+  line-height: 1.2em;
+  font-family: 'Raleway', sans-serif; }
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     html {
       font-size: 80%; } }
@@ -14,8 +15,7 @@ html {
 .wrapper {
   overflow: hidden;
   margin: 0 auto;
-  background-color: #fff;
-  font-family: 'Raleway', sans-serif; }
+  background-color: #fff; }
 
 .hero-section {
   margin-bottom: 5rem; }
@@ -25,39 +25,39 @@ html {
   max-width: 62.5em;
   padding: 0 1em; }
 
-.site-header {
+.header {
   padding: 2em 0; }
-  .site-header .header-inner {
+  .header .header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-  .site-header .site-logo {
+  .header .header-logo {
     display: block; }
-  .site-header .logo {
+  .header .logo-img {
     height: 7.5rem;
     width: 14.5rem; }
-  .site-header .site-navigation li {
+  .header .header-navigation li {
     display: inline-block;
     padding-left: 4em; }
-  .site-header .site-navigation a {
+  .header .header-navigation a {
     color: #999;
     font-size: 2.5em;
     transition: 0.3s linear; }
-  .site-header .site-navigation a:hover {
+  .header .header-navigation :hover {
     color: #9fd86c; }
 
-#ulNavigation {
+.navigation-list {
   display: flex;
   align-items: center;
   justify-content: flex-end; }
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    #ulNavigation {
+    .navigation-list {
       display: none; } }
   @media screen and (max-width: 767px) {
-    #ulNavigation {
+    .navigation-list {
       display: none; } }
 
-button {
+.header-btn_toggle {
   position: absolute;
   right: 1.1rem;
   top: -4.125rem;
@@ -67,7 +67,7 @@ button {
   color: #999;
   font-size: 2.5em;
   transition: 0.3s linear; }
-  button button:hover {
+  .header-btn_toggle :hover {
     color: #9fd86c; }
 
 .active {
@@ -80,31 +80,31 @@ button {
   .carousel-caption p {
     font-size: 1.5em; }
 
-.site-believing {
+.section-believing {
   padding: 5.6em 0;
   background-color: #fafafa; }
-  .site-believing .believing-title {
+  .section-believing .believing-title {
     margin-bottom: 3rem;
     font-size: 3.8em;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     text-align: center; }
-  .site-believing p {
+  .section-believing p {
     font-size: 2.2em; }
-  .site-believing .believing-items {
+  .section-believing .believing-list {
     counter-reset: x;
     padding-left: 5.62em; }
-  .site-believing .believing-item {
+  .section-believing .believing-item {
     position: relative;
     margin-bottom: 1em; }
-    .site-believing .believing-item h3 {
+    .section-believing .believing-item h3 {
       margin-bottom: 1.5em;
       font-size: 2em;
       font-weight: bold; }
-    .site-believing .believing-item p {
+    .section-believing .believing-item p {
       font-size: 1.5em;
       font-family: "Lato", sans-serif; }
-  .site-believing .believing-item::before {
+  .section-believing .believing-item::before {
     overflow: hidden;
     position: absolute;
     z-index: 1;
@@ -116,18 +116,18 @@ button {
     color: #5ccda3;
     text-transform: uppercase; }
     @media screen and (min-width: 768px) and (max-width: 1023px) {
-      .site-believing .believing-item::before {
+      .section-believing .believing-item::before {
         left: -3rem;
         top: 0.75rem; } }
     @media screen and (max-width: 767px) {
-      .site-believing .believing-item::before {
+      .section-believing .believing-item::before {
         left: -2.3125rem;
         top: 0.5rem; } }
     @media screen and (max-width: 567px) {
-      .site-believing .believing-item::before {
+      .section-believing .believing-item::before {
         left: -3rem;
         top: -1rem; } }
-  .site-believing .believing-item::after {
+  .section-believing .believing-item::after {
     position: absolute;
     content: "";
     display: inline-block;
@@ -139,50 +139,50 @@ button {
     margin-right: 0.625rem;
     background-color: #5ccda3; }
     @media screen and (min-width: 768px) and (max-width: 1023px) {
-      .site-believing .believing-item::after {
+      .section-believing .believing-item::after {
         left: -1.5rem;
         top: 4.155rem;
         height: 0.25rem; } }
     @media screen and (max-width: 767px) {
-      .site-believing .believing-item::after {
+      .section-believing .believing-item::after {
         top: 3.7rem;
         left: -1rem;
         height: 0.4rem; } }
     @media screen and (max-width: 567px) {
-      .site-believing .believing-item::after {
+      .section-believing .believing-item::after {
         display: none; } }
 
-.site-about {
+.section-about {
   padding: 5.6em 0;
   background-color: #fff; }
-  .site-about .about-title {
+  .section-about .about-title {
     margin-bottom: 3rem;
     font-size: 3.8em;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     text-align: center; }
-  .site-about .members-p {
+  .section-about .about-text {
     max-width: 37.5rem;
     margin: 0 auto;
     font-size: 1.3em;
     margin-bottom: 2em;
     text-align: center; }
-  .site-about .team {
+  .section-about .team {
     display: flex;
     justify-content: space-between; }
-  .site-about .employee {
+  .section-about .employee {
     display: flex;
     flex-direction: column; }
-  .site-about .employee-info h1 {
+  .section-about .employee-info h1 {
     margin-bottom: 1em;
     font-size: 1.8em;
     font-weight: normal;
     text-align: center; }
-  .site-about .employee-info p {
+  .section-about .employee-info p {
     margin-bottom: 1em;
     font-size: 1.4em;
     text-align: center; }
-  .site-about img {
+  .section-about img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -198,65 +198,67 @@ iframe {
   display: block;
   margin: 0 auto; }
 
-.site-map {
+.section-map {
   background-color: #fafafa;
   padding: 2.8em 0; }
-  .site-map .map {
+  .section-map .map {
     width: 62.5rem;
     height: 28.1rem; }
     @media screen and (min-width: 768px) and (max-width: 1023px) {
-      .site-map .map {
+      .section-map .map {
         width: 48rem; } }
     @media screen and (max-width: 767px) {
-      .site-map .map {
+      .section-map .map {
         max-width: 44rem; } }
     @media screen and (max-width: 567px) {
-      .site-map .map {
+      .section-map .map {
         max-width: 35rem; } }
-  .site-map h2 {
+  .section-map h2 {
     font-size: 3.125em;
     color: #36988e;
     text-align: center;
     margin-bottom: 1.8rem; }
-  .site-map .map-p {
+  .section-map .map-text {
     max-width: 37.5em;
     text-align: center;
     margin: 0 auto;
     font-size: 1.25em;
     margin-bottom: 2.8em; }
-  .site-map .img-map {
+  .section-map .img-map {
     height: auto;
     max-width: 62.5em;
     padding-bottom: 3.125em;
     padding-top: 1.5em; }
 
-.site-contact {
+.section-contact {
   background-color: #fff; }
-  .site-contact .interconnection {
+  .section-contact .interconnection {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-  .site-contact .section-container {
+  .section-contact .section-container {
     overflow: hidden;
     padding: 8.125em 0; }
-  .site-contact .contact-info {
+  .section-contact .contact-info {
     margin: 0 auto;
     margin-bottom: 2em;
     max-width: 25rem;
     font-family: "Lato", sans-serif; }
-    .site-contact .contact-info .contact-title {
+    .section-contact .contact-info .contact-title {
       margin-bottom: 2.8rem;
       font-size: 3.125em;
       font-weight: 300;
       color: #36988e;
       font-family: 'Raleway', sans-serif; }
-    .site-contact .contact-info p {
-      font-size: 1.35em; }
-  .site-contact .social-icons {
+    .section-contact .contact-info .contact-text {
+      font-size: 1.35em;
+      font-family: 'Raleway', sans-serif;
+      line-height: 1.2em; }
+  .section-contact .social-icons {
     display: block;
     max-width: 31em;
     margin: 0 auto; }
-    .site-contact .social-icons .social-item {
+    .section-contact .social-icons .social-item {
       position: relative;
       display: inline-block;
       height: 9em;
@@ -265,54 +267,54 @@ iframe {
       margin-bottom: 0.5em;
       border: 0.125rem solid #eee;
       border-radius: 50%; }
-      .site-contact .social-icons .social-item a {
+      .section-contact .social-icons .social-item a {
         position: absolute;
         display: block;
         height: 100%;
         top: 50%;
         left: 50%; }
-      .site-contact .social-icons .social-item i {
+      .section-contact .social-icons .social-item i {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: #9fd86c;
         font-size: 3.75em; }
-    .site-contact .social-icons li:hover {
+    .section-contact .social-icons li:hover {
       background: #9fd86c;
       border: 0.125rem solid #9fd86c;
       border-radius: 50%;
       transition: 0.1s linear; }
-      .site-contact .social-icons li:hover i {
+      .section-contact .social-icons li:hover i {
         color: #fff; }
 
-footer {
+.footer {
   background-color: #108a7e;
   padding: 1.5em 0;
   width: 100%;
   padding: 4em 0;
   overflow: hidden;
   color: white; }
-  footer .section-container {
+  .footer .section-container {
     display: flex;
     justify-content: space-between;
     padding: 0 1em; }
-  footer .footer-contact {
+  .footer .footer-contact {
     display: flex;
     justify-content: space-between; }
-  footer .footer-info {
+  .footer .footer-info {
     font-size: 1.25em; }
-    footer .footer-info p {
+    .footer .footer-info p {
       max-width: 17rem;
       margin-bottom: 2em; }
       @media screen and (max-width: 767px) {
-        footer .footer-info p {
+        .footer .footer-info p {
           max-width: 100%; } }
-  footer .footer-navigation li {
+  .footer .footer-navigation li {
     font-size: 2.8em;
     padding-left: 1em; }
-  footer .footer-navigation i {
+  .footer .footer-navigation i {
     color: #fff; }
-  footer .footer-navigation li i:hover {
+  .footer .footer-navigation li i:hover {
     color: #999; }
 
 /*# sourceMappingURL=style.css.map */

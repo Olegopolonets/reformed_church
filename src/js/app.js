@@ -1,3 +1,3 @@
 function toggleMenu() {
-  document.getElementById("ulNavigation").classList.toggle("active");
+  document.getElementById("navigation-list").classList.toggle("active");
 }

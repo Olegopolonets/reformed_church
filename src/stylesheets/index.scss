@@ -6,7 +6,8 @@ $desktop: 1024px;
 
 html {
   font-size: 100%;
-  line-height: normal;
+  line-height: 1.2em;
+  font-family: 'Raleway', sans-serif;
   @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
     font-size: 80%;
   }
@@ -21,8 +22,6 @@ box-sizing: border-box;
   overflow: hidden;
   margin: 0 auto;
   background-color: #fff;
-  font-family: 'Raleway', sans-serif;
-
 }
 .hero-section {
   margin-bottom: 5rem;
@@ -32,21 +31,21 @@ box-sizing: border-box;
   max-width: 62.5em;
     padding: 0 1em;
 }
-.site-header {
+.header {
   padding: 2em 0;
   .header-inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .site-logo {
+  .header-logo {
     display: block;
   }
-  .logo {
+  .logo-img {
     height: 7.5rem;
     width: 14.5rem;
   }
-.site-navigation  {
+.header-navigation  {
   li {
     display: inline-block;
     padding-left: 4em;
@@ -56,12 +55,12 @@ box-sizing: border-box;
       font-size: 2.5em;
       transition: 0.3s linear;
     } 
-    a:hover {
+    :hover {
       color: #9fd86c;
     }
 }
 }
-#ulNavigation {
+.navigation-list {
 display: flex;
 align-items:center;
 justify-content: flex-end;
@@ -72,7 +71,7 @@ justify-content: flex-end;
   display: none;
 }
 }
-button {
+.header-btn_toggle {
   position: absolute;
   right: 1.1rem;
   top: -4.125rem;
@@ -82,7 +81,7 @@ button {
   color: #999;
   font-size: 2.5em;
   transition: 0.3s linear;
-  button:hover {
+  :hover {
     color: #9fd86c;
   }
 }
@@ -98,7 +97,7 @@ button {
     font-size: 1.5em;
   }
 }
-.site-believing {
+.section-believing {
   padding: 5.6em 0;
   background-color: #fafafa;
   .believing-title {
@@ -111,7 +110,7 @@ button {
   p {
     font-size: 2.2em;
   }
-  .believing-items {
+  .believing-list {
     counter-reset: x;
     padding-left: 5.62em;
   }
@@ -178,7 +177,7 @@ button {
     }
   }
 }
-.site-about {
+.section-about {
   padding: 5.6em 0;
   background-color: #fff;
   .about-title {
@@ -188,7 +187,7 @@ button {
     font-weight: 300;
     text-align: center;
   }
-  .members-p {
+  .about-text {
     max-width: 37.5rem;
     margin: 0 auto;
     font-size: 1.3em;
@@ -234,7 +233,7 @@ iframe {
   display:block;
   margin: 0 auto;
 }
-.site-map {
+.section-map {
   background-color: #fafafa;
   padding: 2.8em 0;
   .map {
@@ -256,7 +255,7 @@ iframe {
     text-align: center;
     margin-bottom: 1.8rem;
   }
-  .map-p {
+  .map-text {
     max-width: 37.5em;
     text-align: center;
     margin: 0 auto;
@@ -270,7 +269,7 @@ iframe {
     padding-top: 1.5em;
   }
 }
-.site-contact {
+.section-contact {
   background-color: #fff;
   .interconnection {
     display: flex;
@@ -293,8 +292,10 @@ iframe {
       color: #36988e;
       font-family: 'Raleway', sans-serif;
     }
-    p {
+    .contact-text {
       font-size: 1.35em;
+      font-family: 'Raleway', sans-serif;
+      line-height: 1.2em;
     }
   }
   .social-icons {
@@ -336,7 +337,7 @@ iframe {
     }
   }
 }
-footer {
+.footer {
   background-color: #108a7e;
   padding: 1.5em 0;
   width: 100%;
