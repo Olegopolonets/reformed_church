@@ -6,6 +6,7 @@ $desktop: 1024px;
 
 html {
   font-size: 100%;
+  line-height: normal;
   @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
     font-size: 80%;
   }
@@ -73,7 +74,7 @@ justify-content: flex-end;
 }
 button {
   position: absolute;
-  right: 0.625rem;
+  right: 1.1rem;
   top: -4.125rem;
   outline: none;
   border: none;
@@ -146,6 +147,10 @@ button {
       left: -2.3125rem;
       top: 0.5rem;
     }
+    @media screen and (max-width: $mobile - 1px) {
+      left: -3rem;
+      top: -1rem;
+    }
   }
   .believing-item::after {
     position: absolute;
@@ -185,9 +190,10 @@ button {
   }
   .members-p {
     max-width: 37.5rem;
-    text-align: center;
     margin: 0 auto;
+    font-size: 1.3em;
     margin-bottom: 2em;
+    text-align: center;
   }
   .team {
     display: flex;
@@ -235,13 +241,13 @@ iframe {
     width: 62.5rem;
     height: 28.1rem;
     @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
-      width: 46.8rem;
+      width: 48rem;
     }
     @media screen and (max-width: $tablet - 1px) {
-      max-width: 31.25rem;
+      max-width: 44rem;
     }
     @media screen and (max-width: $mobile - 1px) {
-      max-width: 18.75rem;
+      max-width: 35rem;
     }
   }
   h2 {
@@ -286,6 +292,9 @@ iframe {
       font-weight: 300;
       color: #36988e;
       font-family: 'Raleway', sans-serif;
+    }
+    p {
+      font-size: 1.35em;
     }
   }
   .social-icons {
@@ -347,7 +356,7 @@ footer {
     font-size: 1.25em;
     p {
       max-width: 17rem;
-      margin-bottom: 1em;
+      margin-bottom: 2em;
       @media screen and (max-width: $tablet - 1px) {
         max-width: 100%;
       }
