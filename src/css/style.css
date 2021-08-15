@@ -1,7 +1,7 @@
 html {
   font-size: 100%;
-  line-height: 1.2em;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  color: #999; }
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     html {
       font-size: 80%; } }
@@ -12,13 +12,13 @@ html {
 * {
   box-sizing: border-box; }
 
+p {
+  line-height: 1.4; }
+
 .wrapper {
   overflow: hidden;
-  margin: 0 auto;
-  background-color: #fff; }
-
-.hero-section {
-  margin-bottom: 5rem; }
+  background-color: #fff;
+  line-height: 1.2; }
 
 .section-container {
   margin: 0 auto;
@@ -50,12 +50,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: flex-end; }
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .navigation-list {
-      display: none; } }
-  @media screen and (max-width: 767px) {
-    .navigation-list {
-      display: none; } }
 
 .header-btn_toggle {
   position: absolute;
@@ -84,9 +78,7 @@ html {
   padding: 5.6em 0;
   background-color: #fafafa; }
   .section-believing .believing-title {
-    margin-bottom: 3rem;
     font-size: 3.8em;
-    font-family: 'Raleway', sans-serif;
     font-weight: 300;
     text-align: center; }
   .section-believing p {
@@ -95,9 +87,8 @@ html {
     counter-reset: x;
     padding-left: 5.62em; }
   .section-believing .believing-item {
-    position: relative;
-    margin-bottom: 1em; }
-    .section-believing .believing-item h3 {
+    position: relative; }
+    .section-believing .believing-item .believing-caption {
       margin-bottom: 1.5em;
       font-size: 2em;
       font-weight: bold; }
@@ -118,7 +109,7 @@ html {
     @media screen and (min-width: 768px) and (max-width: 1023px) {
       .section-believing .believing-item::before {
         left: -3rem;
-        top: 0.75rem; } }
+        top: 0.9rem; } }
     @media screen and (max-width: 767px) {
       .section-believing .believing-item::before {
         left: -2.3125rem;
@@ -141,7 +132,7 @@ html {
     @media screen and (min-width: 768px) and (max-width: 1023px) {
       .section-believing .believing-item::after {
         left: -1.5rem;
-        top: 4.155rem;
+        top: 4.35rem;
         height: 0.25rem; } }
     @media screen and (max-width: 767px) {
       .section-believing .believing-item::after {
@@ -156,16 +147,12 @@ html {
   padding: 5.6em 0;
   background-color: #fff; }
   .section-about .about-title {
-    margin-bottom: 3rem;
     font-size: 3.8em;
-    font-family: 'Raleway', sans-serif;
     font-weight: 300;
     text-align: center; }
   .section-about .about-text {
     max-width: 37.5rem;
-    margin: 0 auto;
     font-size: 1.3em;
-    margin-bottom: 2em;
     text-align: center; }
   .section-about .team {
     display: flex;
@@ -174,29 +161,19 @@ html {
     display: flex;
     flex-direction: column; }
   .section-about .employee-info h1 {
-    margin-bottom: 1em;
     font-size: 1.8em;
-    font-weight: normal;
     text-align: center; }
   .section-about .employee-info p {
-    margin-bottom: 1em;
     font-size: 1.4em;
     text-align: center; }
   .section-about img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 17.5em;
     height: 17.5em;
-    margin-bottom: 4em;
     overflow: hidden;
     box-shadow: 0 0 2.7rem 4rem #fff inset;
     border-radius: 50%;
     object-fit: cover; }
-
-iframe {
-  display: block;
-  margin: 0 auto; }
 
 .section-map {
   background-color: #fafafa;
@@ -206,24 +183,18 @@ iframe {
     height: 28.1rem; }
     @media screen and (min-width: 768px) and (max-width: 1023px) {
       .section-map .map {
-        width: 48rem; } }
-    @media screen and (max-width: 767px) {
-      .section-map .map {
-        max-width: 44rem; } }
+        width: 56rem; } }
     @media screen and (max-width: 567px) {
       .section-map .map {
-        max-width: 35rem; } }
+        max-width: 45rem; } }
   .section-map h2 {
     font-size: 3.125em;
     color: #36988e;
-    text-align: center;
-    margin-bottom: 1.8rem; }
-  .section-map .map-text {
+    text-align: center; }
+  .section-map .adress {
     max-width: 37.5em;
     text-align: center;
-    margin: 0 auto;
-    font-size: 1.25em;
-    margin-bottom: 2.8em; }
+    font-size: 1.25em; }
   .section-map .img-map {
     height: auto;
     max-width: 62.5em;
@@ -240,24 +211,18 @@ iframe {
     overflow: hidden;
     padding: 8.125em 0; }
   .section-contact .contact-info {
-    margin: 0 auto;
-    margin-bottom: 2em;
-    max-width: 25rem;
-    font-family: "Lato", sans-serif; }
+    max-width: 25rem; }
     .section-contact .contact-info .contact-title {
-      margin-bottom: 2.8rem;
       font-size: 3.125em;
       font-weight: 300;
-      color: #36988e;
-      font-family: 'Raleway', sans-serif; }
+      color: #36988e; }
     .section-contact .contact-info .contact-text {
-      font-size: 1.35em;
-      font-family: 'Raleway', sans-serif;
-      line-height: 1.2em; }
+      font-size: 1.35em; }
   .section-contact .social-icons {
-    display: block;
-    max-width: 31em;
-    margin: 0 auto; }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 38em; }
     .section-contact .social-icons .social-item {
       position: relative;
       display: inline-block;
@@ -304,9 +269,8 @@ iframe {
   .footer .footer-info {
     font-size: 1.25em; }
     .footer .footer-info p {
-      max-width: 17rem;
-      margin-bottom: 2em; }
-      @media screen and (max-width: 767px) {
+      max-width: 17rem; }
+      @media screen and (max-width: 1023px) {
         .footer .footer-info p {
           max-width: 100%; } }
   .footer .footer-navigation li {
@@ -317,4 +281,4 @@ iframe {
   .footer .footer-navigation li i:hover {
     color: #999; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style1.css.map */

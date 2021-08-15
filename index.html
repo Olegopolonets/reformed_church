@@ -13,14 +13,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="src/css/reset.css">
-  <link rel="stylesheet" href="src/css/aplication.css">
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper mx-auto">
     <header class="header" id="musthead">
-      <div class="section-container ">
+      <div class="section-container">
         <div class="row header-inner">
           <div class="col-3">
             <a class="header-logo" href="index.html">
@@ -31,7 +30,7 @@
           </div>
           <div class="col-lg-9 d-md-block">
             <nav class="header-navigation" id="header-navigation" role="navigation">
-              <ul class="navigation-list" id="navigation-list">
+              <ul class="navigation-list d-lg-flex d-none" id="navigation-list">
                 <li class="navigation-item">
                   <a class="navigation-item_link" href="#site-gallery">
                     <i class="far fa-image"></i>
@@ -66,7 +65,7 @@
         </div>
       </div>
     </header>
-    <section class="hero-section" id="site-gallery" role="banner">
+    <section class="hero-section mb-5" id="site-gallery" role="banner">
       <div class="section-container">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
@@ -104,23 +103,23 @@
     </section>
     <section class="section-believing" id="section-believing">
       <article class="section-container">
-        <h1 class="believing-title">What we believe in</h1>
+        <h1 class="believing-title mb-5">What we believe in</h1>
         <ul class="believing-list">
-          <li class="believing-item">
-            <h3>Lorem ipsum dolor sit amet</h3>
+          <li class="believing-item mb-3">
+            <h3 class="believing-caption">Lorem ipsum dolor sit amet</h3>
             <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
               sed diam nonummy nibh eusmod tincidunt ut laoreet dolore magna aliquam erat volutpat.
               Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
               nisl ut aliquip ex ea commodo consequat.</p>
           </li>
-          <li class="believing-item">
-            <h3>Ut wisi enim ad minim veniam, quis nostrud
+          <li class="believing-item mb-3">
+            <h3 class="believing-caption">Ut wisi enim ad minim veniam, quis nostrud
               exerci tation </h3>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
               diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
           </li>
-          <li class="believing-item">
-            <h3>Duis autem vel eum iriure dolor in hendrerit in </h3>
+          <li class="believing-item mb-3">
+            <h3 class="believing-caption">Duis autem vel eum iriure dolor in hendrerit in </h3>
             <p> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
               molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
               et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
@@ -131,36 +130,36 @@
     </section>
     <section class="section-about" id="section-about">
       <div class="section-container">
-        <h1 class="about-title">Who We Are</h1>
-        <p class="about-text">Lorem ipsum dolor sit amet, cуsectetuer adipiscing
+        <h1 class="about-title mb-5">Who We Are</h1>
+        <p class="about-text mx-auto mb-4">Lorem ipsum dolor sit amet, cуsectetuer adipiscing
           elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
           magna aliquam erat volutpat.
         </p>
         <ul class="row team">
           <li class="col-lg-4 col-md-6">
             <div class="employee">
-              <img class="employee-img" src="src/img/people.png" alt="">
-              <div class="employee-info">
-                <h1 class="employee-title">Lorem, ipsum.</h1>
-                <p class="employee-text">Lorem ipsum dolor sit amet.</p>
+              <img class="employee-img mb-5 mx-auto" src="src/img/people.png" alt="">
+              <div class="employee-info ">
+                <h1 class="employee-title mb-3">Lorem, ipsum.</h1>
+                <p class="employee-text mb-3">Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
           </li>
           <li class="col-lg-4 col-md-6">
             <div class="employee">
-              <img class="employee-img" src="src/img/people2.jpg" alt="">
+              <img class="employee-img mb-5 mx-auto" src="src/img/people2.jpg" alt="">
               <div class="employee-info">
-                <h1>Lorem, ipsum.</h1>
-                <p class="employee-text">Lorem ipsum dolor sit amet.</p>
+                <h1 class="employee-title mb-3">Lorem, ipsum.</h1>
+                <p class="employee-text mb-3">Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
           </li>
           <li class="col-lg-4 col-md-6">
             <div class="employee">
-              <img class="employee-img" src="src/img/people3.jpg" alt="">
+              <img class="employee-img mb-5 mx-auto" src="src/img/people3.jpg" alt="">
               <div class="employee-info">
-                <h1 class="employee-title">Lorem, ipsum.</h1>
-                <p class="employee-text">Lorem ipsum dolor sit amet.</p>
+                <h1 class="employee-title mb-3">Lorem, ipsum.</h1>
+                <p class="employee-text mb-3">Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
           </li>
@@ -169,55 +168,60 @@
     </section>
     <section class="section-map" id="section-map">
       <div class="section-container">
-        <h2 class="map-title">Adminim veniamsanw</h2>
-        <p class="map-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-          sed diam nonummy nibh euismod tincidunt ut </p>
+        <h2 class="map-title mb-4">Adminim veniamsanw</h2>
+        <p class="adress mx-auto mb-3">
+          <span class="street-address">Чекаємо Вас за адресою м. Черкаси, Смілянська 121, кв.17.</span>
+        </p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.3553649758837!2d32.03662711516898!3d49.4210952688754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14b8b53ced457%3A0x9456e943f499c60!2z0LLRg9C70LjRhtGPINCh0LzRltC70Y_QvdGB0YzQutCwLCAxMjEsINCn0LXRgNC60LDRgdC4LCDQp9C10YDQutCw0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDE4MDAw!5e0!3m2!1suk!2sua!4v1628266948155!5m2!1suk!2sua"
-          class="map" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          class="map d-block mx-auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </section>
     <section class="section-contact" id="section-contact">
       <div class="section-container">
         <div class="row interconnection">
-          <div class="col-lg-6">
-            <div class="contact-info">
-              <h2 class="contact-title">Наші контакти</h2>
-              <p class="contact-text">Чекаємо Вас за адресою м. Черкаси, Смілянська 121, кв.17.</p>
+          <div class="col-lg-6 col-md-12">
+            <div class="contact-info mx-auto mb-4">
+              <h2 class="contact-title mb-5">Наші контакти</h2>
+              <p class="contact-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, culpa.</p>
             </div>
           </div>
-          <div class="col-lg-6">
-            <ul class="social-icons">
-              <li class="social-item">
-                <a class="social-item_link" href="mailto:cocos2cocos@gmail.com">
-                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="social-item">
-                <a class="social-item_link" href="https://uk-ua.facebook.com/">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="social-item">
-                <a class="social-item_link" href="https://twitter.com/?lang=uk">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="social-item">
-                <a class="social-item_link" href="tel:+1234567890">
-                  <i class="fas fa-phone" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="social-item">
-                <a class="social-item_link" href="https://www.youtube.com/">
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="social-item">
-                <a class="social-item_link" href="https://www.instagram.com">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-              </li>
+          <div class="col-lg-6 col-md-12">
+            <ul class="social-icons mx-auto">
+              <div class="div">
+                <li class="social-item">
+                  <a class="social-item_link" href="mailto:cocos2cocos@gmail.com">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-item_link" href="https://uk-ua.facebook.com/">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-item_link" href="https://twitter.com/?lang=uk">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </div>
+              <div class="div">
+                <li class="social-item">
+                  <a class="social-item_link" href="tel:+1234567890">
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-item_link" href="https://www.youtube.com/">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-item_link" href="https://www.instagram.com">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </div>
             </ul>
           </div>
         </div>
@@ -226,7 +230,7 @@
 
     <footer class="footer" id="site-footer">
       <div class="section-container row">
-        <div class="footer-info col-lg-6">
+        <div class="footer-info col-lg-6 mb-4">
           <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
         </div>
         <div class="footer-navigation col-lg-6" id="footer-navigation">
