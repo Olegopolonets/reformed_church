@@ -94,7 +94,7 @@ justify-content: flex-end;
 .section-believing {
   padding: 5.6em 0;
   background-color: #fafafa;
-  .believing-title {
+  .article-title {
     font-size: 3.8em;
     font-weight: 300;
     text-align: center;
@@ -102,13 +102,13 @@ justify-content: flex-end;
   p {
     font-size: 2.2em;
   }
-  .believing-list {
+  .article-list {
     counter-reset: x;
     padding-left: 5.62em;
   }
-  .believing-item {
+  .article-item {
     position: relative;
-    .believing-caption {
+    .article-caption {
       margin-bottom: 1.5em;
       font-size: 2em;
       font-weight: bold;
@@ -118,7 +118,7 @@ justify-content: flex-end;
       font-family: $font-stack;
     }
   }
-  .believing-item::before {
+  .article-item::before {
     overflow: hidden;
     position: absolute;
     z-index: 1;
@@ -142,7 +142,7 @@ justify-content: flex-end;
       top: -1rem;
     }
   }
-  .believing-item::after {
+  .article-item::after {
     position: absolute;
     content: "";
     display: inline-block;
@@ -253,6 +253,9 @@ justify-content: flex-end;
   }
   .contact-info {
     max-width: 25rem;
+    @media screen and (min-width: $mobile) and (max-width: $desktop - 1px) {
+      max-width: 45rem;
+    }
     .contact-title {
       font-size: 3.125em;
       font-weight: 300;
@@ -266,7 +269,6 @@ justify-content: flex-end;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 38em;
     .social-item {
       position: relative;
       display: inline-block;
@@ -279,14 +281,13 @@ justify-content: flex-end;
       a {
         position: absolute;
         display: block;
-        height: 100%;
         top: 50%;
         left: 50%;
+        transform: translate(-50%, -50%);
       }
       i {
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
         color: $hover-color;
         font-size: 3.75em;
       }
@@ -314,7 +315,7 @@ justify-content: flex-end;
     justify-content: space-between;
     padding: 0 1em;
   }
-  .footer-contact {
+  .footer-navigation_list {
     display: flex;
     justify-content: space-between;
   }

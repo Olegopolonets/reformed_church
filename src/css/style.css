@@ -77,25 +77,25 @@ p {
 .section-believing {
   padding: 5.6em 0;
   background-color: #fafafa; }
-  .section-believing .believing-title {
+  .section-believing .article-title {
     font-size: 3.8em;
     font-weight: 300;
     text-align: center; }
   .section-believing p {
     font-size: 2.2em; }
-  .section-believing .believing-list {
+  .section-believing .article-list {
     counter-reset: x;
     padding-left: 5.62em; }
-  .section-believing .believing-item {
+  .section-believing .article-item {
     position: relative; }
-    .section-believing .believing-item .believing-caption {
+    .section-believing .article-item .article-caption {
       margin-bottom: 1.5em;
       font-size: 2em;
       font-weight: bold; }
-    .section-believing .believing-item p {
+    .section-believing .article-item p {
       font-size: 1.5em;
       font-family: "Lato", sans-serif; }
-  .section-believing .believing-item::before {
+  .section-believing .article-item::before {
     overflow: hidden;
     position: absolute;
     z-index: 1;
@@ -107,18 +107,18 @@ p {
     color: #5ccda3;
     text-transform: uppercase; }
     @media screen and (min-width: 768px) and (max-width: 1023px) {
-      .section-believing .believing-item::before {
+      .section-believing .article-item::before {
         left: -3rem;
         top: 0.9rem; } }
     @media screen and (max-width: 767px) {
-      .section-believing .believing-item::before {
+      .section-believing .article-item::before {
         left: -2.3125rem;
         top: 0.5rem; } }
     @media screen and (max-width: 567px) {
-      .section-believing .believing-item::before {
+      .section-believing .article-item::before {
         left: -3rem;
         top: -1rem; } }
-  .section-believing .believing-item::after {
+  .section-believing .article-item::after {
     position: absolute;
     content: "";
     display: inline-block;
@@ -130,17 +130,17 @@ p {
     margin-right: 0.625rem;
     background-color: #5ccda3; }
     @media screen and (min-width: 768px) and (max-width: 1023px) {
-      .section-believing .believing-item::after {
+      .section-believing .article-item::after {
         left: -1.5rem;
         top: 4.35rem;
         height: 0.25rem; } }
     @media screen and (max-width: 767px) {
-      .section-believing .believing-item::after {
+      .section-believing .article-item::after {
         top: 3.7rem;
         left: -1rem;
         height: 0.4rem; } }
     @media screen and (max-width: 567px) {
-      .section-believing .believing-item::after {
+      .section-believing .article-item::after {
         display: none; } }
 
 .section-about {
@@ -212,6 +212,9 @@ p {
     padding: 8.125em 0; }
   .section-contact .contact-info {
     max-width: 25rem; }
+    @media screen and (min-width: 568px) and (max-width: 1023px) {
+      .section-contact .contact-info {
+        max-width: 45rem; } }
     .section-contact .contact-info .contact-title {
       font-size: 3.125em;
       font-weight: 300;
@@ -221,8 +224,7 @@ p {
   .section-contact .social-icons {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    max-width: 38em; }
+    flex-wrap: wrap; }
     .section-contact .social-icons .social-item {
       position: relative;
       display: inline-block;
@@ -235,13 +237,12 @@ p {
       .section-contact .social-icons .social-item a {
         position: absolute;
         display: block;
-        height: 100%;
         top: 50%;
-        left: 50%; }
+        left: 50%;
+        transform: translate(-50%, -50%); }
       .section-contact .social-icons .social-item i {
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
         color: #9fd86c;
         font-size: 3.75em; }
     .section-contact .social-icons li:hover {
@@ -263,7 +264,7 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 0 1em; }
-  .footer .footer-contact {
+  .footer .footer-navigation_list {
     display: flex;
     justify-content: space-between; }
   .footer .footer-info {
@@ -281,4 +282,4 @@ p {
   .footer .footer-navigation li i:hover {
     color: #999; }
 
-/*# sourceMappingURL=style1.css.map */
+/*# sourceMappingURL=style.css.map */
