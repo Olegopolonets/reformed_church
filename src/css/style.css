@@ -79,14 +79,14 @@ p {
   padding: 5.6em 0;
   background-color: #fafafa; }
   .section-believing .article-title {
-    font-size: 3.8em;
+    font-size: 3.125em;
     font-weight: 300;
     text-align: center; }
   .section-believing p {
     font-size: 2.2em; }
   .section-believing .article-list {
     counter-reset: x;
-    padding-left: 5.62em; }
+    padding-left: 4.62em; }
   .section-believing .article-item {
     position: relative; }
     .section-believing .article-item .article-caption {
@@ -148,7 +148,7 @@ p {
   padding: 5.6em 0;
   background-color: #fff; }
   .section-about .about-title {
-    font-size: 3.8em;
+    font-size: 3.125em;
     font-weight: 300;
     text-align: center; }
   .section-about .about-text {
@@ -185,9 +185,16 @@ p {
     @media screen and (min-width: 768px) and (max-width: 1023px) {
       .section-map .map {
         width: 56rem; } }
+    @media screen and (max-width: 767px) {
+      .section-map .map {
+        width: 45rem; } }
     @media screen and (max-width: 567px) {
       .section-map .map {
-        max-width: 45rem; } }
+        width: 28rem; } }
+    @media screen and (max-width: 320px) {
+      .section-map .map {
+        width: 24rem;
+        text-align: center; } }
   .section-map h2 {
     font-size: 3.125em;
     color: #36988e;
@@ -212,10 +219,11 @@ p {
     overflow: hidden;
     padding: 8.125em 0; }
   .section-contact .contact-info {
-    max-width: 28rem; }
+    max-width: 24rem; }
     @media screen and (min-width: 568px) and (max-width: 1023px) {
       .section-contact .contact-info {
-        max-width: 45rem; } }
+        max-width: 45rem;
+        text-align: center; } }
     .section-contact .contact-info .contact-title {
       font-size: 3.125em;
       font-weight: 300;

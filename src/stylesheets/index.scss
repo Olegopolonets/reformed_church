@@ -96,7 +96,7 @@ justify-content: flex-end;
   padding: 5.6em 0;
   background-color: #fafafa;
   .article-title {
-    font-size: 3.8em;
+    font-size: 3.125em;
     font-weight: 300;
     text-align: center;
   }
@@ -105,7 +105,7 @@ justify-content: flex-end;
   }
   .article-list {
     counter-reset: x;
-    padding-left: 5.62em;
+    padding-left: 4.62em;
   }
   .article-item {
     position: relative;
@@ -173,7 +173,7 @@ justify-content: flex-end;
   padding: 5.6em 0;
   background-color: #fff;
   .about-title {
-    font-size: 3.8em;
+    font-size: 3.125em;
     font-weight: 300;
     text-align: center;
   }
@@ -220,8 +220,15 @@ justify-content: flex-end;
     @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
       width: 56rem;
     }
+    @media screen and (max-width: $tablet - 1px) {
+      width: 45rem;
+    }
     @media screen and (max-width: $mobile - 1px) {
-      max-width: 45rem;
+      width: 28rem;
+    }
+    @media screen and (max-width: 320px) {
+      width: 24rem;
+      text-align: center;
     }
   }
   h2 {
@@ -253,9 +260,10 @@ justify-content: flex-end;
     padding: 8.125em 0;
   }
   .contact-info {
-    max-width: 28rem;
+    max-width: 24rem;
     @media screen and (min-width: $mobile) and (max-width: $desktop - 1px) {
       max-width: 45rem;
+      text-align: center;
     }
     .contact-title {
       font-size: 3.125em;
